@@ -1,0 +1,2419 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-17T14:04:28.593Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2511000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User calls the API with valid details to get satellite location \"Unit miles\"",
+        "description": "",
+        "id": "this-feature-is-to-identify-location-of-iss-using-api-services;user-calls-the-api-with-valid-details-to-get-satellite-location-\"\u003cdescription\u003e\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 876416000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is having a satellite NORMAD id as \"25544\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25544\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25544/positions"
+            ],
+            "result": {
+              "duration": 2333070000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user will call the \"/satellites/id/positions\" with \"1636029892568,1636029892568\", \"miles\" and \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/positions\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"1636029892568,1636029892568\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"miles\"",
+                  "offset": 86
+                },
+                {
+                  "val": "\"4\"",
+                  "offset": 98
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_with_id(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 200 OK"
+            ],
+            "result": {
+              "duration": 371195000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "[\n    {\n        \"name\": \"iss\",\n        \"id\": 25544,\n        \"latitude\": 49.658253202489,\n        \"longitude\": 98.384591862938,\n        \"altitude\": 5.7338783831195e+26,\n        \"velocity\": 3.5318716354175e-8,\n        \"visibility\": \"visible\",\n        \"footprint\": 12450.781255115,\n        \"timestamp\": 1636029892568,\n        \"daynum\": 21376118.663981,\n        \"solar_lat\": -78.68994403305,\n        \"solar_lon\": 166.61080418087,\n        \"units\": \"miles\"\n    },\n    {\n        \"name\": \"iss\",\n        \"id\": 25544,\n        \"latitude\": 49.658253202489,\n        \"longitude\": 98.384591862938,\n        \"altitude\": 5.7338783831195e+26,\n        \"velocity\": 3.5318716354175e-8,\n        \"visibility\": \"visible\",\n        \"footprint\": 12450.781255115,\n        \"timestamp\": 1636029892568,\n        \"daynum\": 21376118.663981,\n        \"solar_lat\": -78.68994403305,\n        \"solar_lon\": 166.61080418087,\n        \"units\": \"miles\"\n    }\n]"
+            ],
+            "result": {
+              "duration": 19907000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "receive a valid response",
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.receive_a_valid_response()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@valid"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:32.306Z",
+        "before": [
+          {
+            "result": {
+              "duration": 598000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "User calls the API with valid details to get satellite location \"Unit kilometers\"",
+        "description": "",
+        "id": "this-feature-is-to-identify-location-of-iss-using-api-services;user-calls-the-api-with-valid-details-to-get-satellite-location-\"\u003cdescription\u003e\";;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 820000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is having a satellite NORMAD id as \"25544\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25544\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25544/positions"
+            ],
+            "result": {
+              "duration": 676643000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user will call the \"/satellites/id/positions\" with \"1636029892568,1636029892568,1736029892568\", \"kilometers\" and \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/positions\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"1636029892568,1636029892568,1736029892568\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"kilometers\"",
+                  "offset": 100
+                },
+                {
+                  "val": "\"4\"",
+                  "offset": 117
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_with_id(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 200 OK"
+            ],
+            "result": {
+              "duration": 5357000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "[\n    {\n        \"name\": \"iss\",\n        \"id\": 25544,\n        \"latitude\": 49.658253202489,\n        \"longitude\": 98.384591862938,\n        \"altitude\": 9.2277856274584e+26,\n        \"velocity\": 5.683998183722e-8,\n        \"visibility\": \"visible\",\n        \"footprint\": 20037.596307384,\n        \"timestamp\": 1636029892568,\n        \"daynum\": 21376118.663981,\n        \"solar_lat\": -78.68994403305,\n        \"solar_lon\": 166.61080418087,\n        \"units\": \"kilometers\"\n    },\n    {\n        \"name\": \"iss\",\n        \"id\": 25544,\n        \"latitude\": 49.658253202489,\n        \"longitude\": 98.384591862938,\n        \"altitude\": 9.2277856274584e+26,\n        \"velocity\": 5.683998183722e-8,\n        \"visibility\": \"visible\",\n        \"footprint\": 20037.596307384,\n        \"timestamp\": 1636029892568,\n        \"daynum\": 21376118.663981,\n        \"solar_lat\": -78.68994403305,\n        \"solar_lon\": 166.61080418087,\n        \"units\": \"kilometers\"\n    },\n    {\n        \"name\": \"iss\",\n        \"id\": 25544,\n        \"latitude\": -25.348180383985,\n        \"longitude\": 40.031384824948,\n        \"altitude\": 1.4923049563896e+27,\n        \"velocity\": 4.4383776258938e-8,\n        \"visibility\": \"daylight\",\n        \"footprint\": 20037.596307384,\n        \"timestamp\": 1736029892568,\n        \"daynum\": 22533526.071389,\n        \"solar_lat\": -58.477364151343,\n        \"solar_lon\": 232.67519981002,\n        \"units\": \"kilometers\"\n    }\n]"
+            ],
+            "result": {
+              "duration": 7053000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "receive a valid response",
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.receive_a_valid_response()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@valid"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:33.044Z",
+        "before": [
+          {
+            "result": {
+              "duration": 870000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "User calls the API with valid details to get satellite location \"without unit\"",
+        "description": "",
+        "id": "this-feature-is-to-identify-location-of-iss-using-api-services;user-calls-the-api-with-valid-details-to-get-satellite-location-\"\u003cdescription\u003e\";;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 613000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is having a satellite NORMAD id as \"25544\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25544\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25544/positions"
+            ],
+            "result": {
+              "duration": 646713000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user will call the \"/satellites/id/positions\" with \"1636029892568,1636029892568,1736029892568\", \"\" and \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/positions\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"1636029892568,1636029892568,1736029892568\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 100
+                },
+                {
+                  "val": "\"4\"",
+                  "offset": 107
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_with_id(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 200 OK"
+            ],
+            "result": {
+              "duration": 5105000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "[\n    {\n        \"name\": \"iss\",\n        \"id\": 25544,\n        \"latitude\": 49.658253202489,\n        \"longitude\": 98.384591862938,\n        \"altitude\": 9.2277856274584e+26,\n        \"velocity\": 5.683998183722e-8,\n        \"visibility\": \"visible\",\n        \"footprint\": 20037.596307384,\n        \"timestamp\": 1636029892568,\n        \"daynum\": 21376118.663981,\n        \"solar_lat\": -78.68994403305,\n        \"solar_lon\": 166.61080418087,\n        \"units\": \"kilometers\"\n    },\n    {\n        \"name\": \"iss\",\n        \"id\": 25544,\n        \"latitude\": 49.658253202489,\n        \"longitude\": 98.384591862938,\n        \"altitude\": 9.2277856274584e+26,\n        \"velocity\": 5.683998183722e-8,\n        \"visibility\": \"visible\",\n        \"footprint\": 20037.596307384,\n        \"timestamp\": 1636029892568,\n        \"daynum\": 21376118.663981,\n        \"solar_lat\": -78.68994403305,\n        \"solar_lon\": 166.61080418087,\n        \"units\": \"kilometers\"\n    },\n    {\n        \"name\": \"iss\",\n        \"id\": 25544,\n        \"latitude\": -25.348180383985,\n        \"longitude\": 40.031384824948,\n        \"altitude\": 1.4923049563896e+27,\n        \"velocity\": 4.4383776258938e-8,\n        \"visibility\": \"daylight\",\n        \"footprint\": 20037.596307384,\n        \"timestamp\": 1736029892568,\n        \"daynum\": 22533526.071389,\n        \"solar_lat\": -58.477364151343,\n        \"solar_lon\": 232.67519981002,\n        \"units\": \"kilometers\"\n    }\n]"
+            ],
+            "result": {
+              "duration": 4261000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "receive a valid response",
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.receive_a_valid_response()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@valid"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:33.720Z",
+        "before": [
+          {
+            "result": {
+              "duration": 929000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "User calls the API with valid details to get satellite location \"without unit and indent 100\"",
+        "description": "",
+        "id": "this-feature-is-to-identify-location-of-iss-using-api-services;user-calls-the-api-with-valid-details-to-get-satellite-location-\"\u003cdescription\u003e\";;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 702000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is having a satellite NORMAD id as \"25544\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25544\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25544/positions"
+            ],
+            "result": {
+              "duration": 643248000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user will call the \"/satellites/id/positions\" with \"1636029892568,1636029892568,1736029892568\", \"\" and \"100\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/positions\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"1636029892568,1636029892568,1736029892568\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 100
+                },
+                {
+                  "val": "\"100\"",
+                  "offset": 107
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_with_id(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 200 OK"
+            ],
+            "result": {
+              "duration": 5624000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "[\n    {\n        \"name\": \"iss\",\n        \"id\": 25544,\n        \"latitude\": 49.658253202489,\n        \"longitude\": 98.384591862938,\n        \"altitude\": 9.2277856274584e+26,\n        \"velocity\": 5.683998183722e-8,\n        \"visibility\": \"visible\",\n        \"footprint\": 20037.596307384,\n        \"timestamp\": 1636029892568,\n        \"daynum\": 21376118.663981,\n        \"solar_lat\": -78.68994403305,\n        \"solar_lon\": 166.61080418087,\n        \"units\": \"kilometers\"\n    },\n    {\n        \"name\": \"iss\",\n        \"id\": 25544,\n        \"latitude\": 49.658253202489,\n        \"longitude\": 98.384591862938,\n        \"altitude\": 9.2277856274584e+26,\n        \"velocity\": 5.683998183722e-8,\n        \"visibility\": \"visible\",\n        \"footprint\": 20037.596307384,\n        \"timestamp\": 1636029892568,\n        \"daynum\": 21376118.663981,\n        \"solar_lat\": -78.68994403305,\n        \"solar_lon\": 166.61080418087,\n        \"units\": \"kilometers\"\n    },\n    {\n        \"name\": \"iss\",\n        \"id\": 25544,\n        \"latitude\": -25.348180383985,\n        \"longitude\": 40.031384824948,\n        \"altitude\": 1.4923049563896e+27,\n        \"velocity\": 4.4383776258938e-8,\n        \"visibility\": \"daylight\",\n        \"footprint\": 20037.596307384,\n        \"timestamp\": 1736029892568,\n        \"daynum\": 22533526.071389,\n        \"solar_lat\": -58.477364151343,\n        \"solar_lon\": 232.67519981002,\n        \"units\": \"kilometers\"\n    }\n]"
+            ],
+            "result": {
+              "duration": 5019000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "receive a valid response",
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.receive_a_valid_response()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@valid"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:34.391Z",
+        "before": [
+          {
+            "result": {
+              "duration": 377000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "User calls the API with valid details to get satellite location \"without unit and indent\"",
+        "description": "",
+        "id": "this-feature-is-to-identify-location-of-iss-using-api-services;user-calls-the-api-with-valid-details-to-get-satellite-location-\"\u003cdescription\u003e\";;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 364000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is having a satellite NORMAD id as \"25544\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25544\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25544/positions"
+            ],
+            "result": {
+              "duration": 626612000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user will call the \"/satellites/id/positions\" with \"1636029892568,1636029892568,1736029892568\", \"\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/positions\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"1636029892568,1636029892568,1736029892568\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 100
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 107
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_with_id(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 200 OK"
+            ],
+            "result": {
+              "duration": 4130000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "[\n    {\n        \"name\": \"iss\",\n        \"id\": 25544,\n        \"latitude\": 49.658253202489,\n        \"longitude\": 98.384591862938,\n        \"altitude\": 9.2277856274584e+26,\n        \"velocity\": 5.683998183722e-8,\n        \"visibility\": \"visible\",\n        \"footprint\": 20037.596307384,\n        \"timestamp\": 1636029892568,\n        \"daynum\": 21376118.663981,\n        \"solar_lat\": -78.68994403305,\n        \"solar_lon\": 166.61080418087,\n        \"units\": \"kilometers\"\n    },\n    {\n        \"name\": \"iss\",\n        \"id\": 25544,\n        \"latitude\": 49.658253202489,\n        \"longitude\": 98.384591862938,\n        \"altitude\": 9.2277856274584e+26,\n        \"velocity\": 5.683998183722e-8,\n        \"visibility\": \"visible\",\n        \"footprint\": 20037.596307384,\n        \"timestamp\": 1636029892568,\n        \"daynum\": 21376118.663981,\n        \"solar_lat\": -78.68994403305,\n        \"solar_lon\": 166.61080418087,\n        \"units\": \"kilometers\"\n    },\n    {\n        \"name\": \"iss\",\n        \"id\": 25544,\n        \"latitude\": -25.348180383985,\n        \"longitude\": 40.031384824948,\n        \"altitude\": 1.4923049563896e+27,\n        \"velocity\": 4.4383776258938e-8,\n        \"visibility\": \"daylight\",\n        \"footprint\": 20037.596307384,\n        \"timestamp\": 1736029892568,\n        \"daynum\": 22533526.071389,\n        \"solar_lat\": -58.477364151343,\n        \"solar_lon\": 232.67519981002,\n        \"units\": \"kilometers\"\n    }\n]"
+            ],
+            "result": {
+              "duration": 4031000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "receive a valid response",
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.receive_a_valid_response()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@valid"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:35.037Z",
+        "before": [
+          {
+            "result": {
+              "duration": 420000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "User calls the API with valid details to get satellite location \"unit with different value other than Miles and kilometers\"",
+        "description": "",
+        "id": "this-feature-is-to-identify-location-of-iss-using-api-services;user-calls-the-api-with-valid-details-to-get-satellite-location-\"\u003cdescription\u003e\";;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2959000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is having a satellite NORMAD id as \"25544\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25544\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25544/positions"
+            ],
+            "result": {
+              "duration": 661947000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user will call the \"/satellites/id/positions\" with \"1636029892568\", \"yards\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/positions\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"1636029892568\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"yards\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 84
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_with_id(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 200 OK"
+            ],
+            "result": {
+              "duration": 2981000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "[\n    {\n        \"name\": \"iss\",\n        \"id\": 25544,\n        \"latitude\": 49.658253202489,\n        \"longitude\": 98.384591862938,\n        \"altitude\": 9.2277856274584e+26,\n        \"velocity\": 5.683998183722e-8,\n        \"visibility\": \"visible\",\n        \"footprint\": 20037.596307384,\n        \"timestamp\": 1636029892568,\n        \"daynum\": 21376118.663981,\n        \"solar_lat\": -78.68994403305,\n        \"solar_lon\": 166.61080418087,\n        \"units\": \"kilometers\"\n    }\n]"
+            ],
+            "result": {
+              "duration": 8204000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "receive a valid response",
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.receive_a_valid_response()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@valid"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:35.735Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1244000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "User calls the API with invalid details to get satellite location \"Unknown satellite no\"",
+        "description": "",
+        "id": "this-feature-is-to-identify-location-of-iss-using-api-services;user-calls-the-api-with-invalid-details-to-get-satellite-location-\"\u003cdescription\u003e\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1641000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User is having a satellite NORMAD id as \"25644\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25644\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25644/positions"
+            ],
+            "result": {
+              "duration": 631263000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user will call the \"/satellites/id/positions\" with \"1636029892568,1636029892568\", \"miles\" and \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/positions\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"1636029892568,1636029892568\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"miles\"",
+                  "offset": 86
+                },
+                {
+                  "val": "\"4\"",
+                  "offset": 98
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_with_id(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 404 Not Found"
+            ],
+            "result": {
+              "duration": 1180000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "should return status code as \"404\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"404\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_return_status_code_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1136000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should receive an error message as like \"satellite not found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"satellite not found\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_should_receive_an_error_message_as_like(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@exception"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:36.385Z",
+        "before": [
+          {
+            "result": {
+              "duration": 382000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "User calls the API with invalid details to get satellite location \"Invalid timestamp\"",
+        "description": "",
+        "id": "this-feature-is-to-identify-location-of-iss-using-api-services;user-calls-the-api-with-invalid-details-to-get-satellite-location-\"\u003cdescription\u003e\";;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 389000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User is having a satellite NORMAD id as \"25544\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25544\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25544/positions"
+            ],
+            "result": {
+              "duration": 687827000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user will call the \"/satellites/id/positions\" with \"saturday29122020,1636029892568\", \"miles\" and \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/positions\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"saturday29122020,1636029892568\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"miles\"",
+                  "offset": 89
+                },
+                {
+                  "val": "\"4\"",
+                  "offset": 101
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_with_id(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 400 Bad Request"
+            ],
+            "result": {
+              "duration": 1038000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "should return status code as \"400\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"400\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_return_status_code_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1561000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should receive an error message as like \"invalid timestamp in list: saturday29122020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid timestamp in list: saturday29122020\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_should_receive_an_error_message_as_like(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@exception"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:37.087Z",
+        "before": [
+          {
+            "result": {
+              "duration": 328000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "User calls the API with invalid details to get satellite location \"Alphanumeric Satellite id\"",
+        "description": "",
+        "id": "this-feature-is-to-identify-location-of-iss-using-api-services;user-calls-the-api-with-invalid-details-to-get-satellite-location-\"\u003cdescription\u003e\";;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 407000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User is having a satellite NORMAD id as \"25A44\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25A44\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25A44/positions"
+            ],
+            "result": {
+              "duration": 1283021000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user will call the \"/satellites/id/positions\" with \"1636029892568,1636029892568\", \"miles\" and \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/positions\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"1636029892568,1636029892568\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"miles\"",
+                  "offset": 86
+                },
+                {
+                  "val": "\"4\"",
+                  "offset": 98
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_with_id(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 404 Not Found"
+            ],
+            "result": {
+              "duration": 1156000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "should return status code as \"404\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"404\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_return_status_code_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 845000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should receive an error message as like \"satellite not found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"satellite not found\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_should_receive_an_error_message_as_like(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@exception"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:38.386Z",
+        "before": [
+          {
+            "result": {
+              "duration": 445000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "User calls the API with invalid details to get satellite location \"With special char\"",
+        "description": "",
+        "id": "this-feature-is-to-identify-location-of-iss-using-api-services;user-calls-the-api-with-invalid-details-to-get-satellite-location-\"\u003cdescription\u003e\";;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 458000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User is having a satellite NORMAD id as \"25%^%^\u0026%\u0026^44\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25%^%^\u0026%\u0026^44\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25%^%^\u0026%\u0026^44/positions"
+            ],
+            "result": {
+              "duration": 631690000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user will call the \"/satellites/id/positions\" with \"1636029892568,1636029892568\", \"miles\" and \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/positions\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"1636029892568,1636029892568\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"miles\"",
+                  "offset": 86
+                },
+                {
+                  "val": "\"4\"",
+                  "offset": 98
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_with_id(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 404 Not Found"
+            ],
+            "result": {
+              "duration": 2957000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "should return status code as \"404\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"404\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_return_status_code_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1183000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should receive an error message as like \"satellite not found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"satellite not found\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_should_receive_an_error_message_as_like(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@exception"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:39.034Z",
+        "before": [
+          {
+            "result": {
+              "duration": 454000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "User calls the API with invalid details to get satellite location \"different set of special char\"",
+        "description": "",
+        "id": "this-feature-is-to-identify-location-of-iss-using-api-services;user-calls-the-api-with-invalid-details-to-get-satellite-location-\"\u003cdescription\u003e\";;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 520000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User is having a satellite NORMAD id as \"2@!£@$%^\u0026*\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2@!£@$%^\u0026*\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/2@!£@$%^\u0026*/positions"
+            ],
+            "result": {
+              "duration": 638072000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user will call the \"/satellites/id/positions\" with \"1636029892568,1636029892568\", \"miles\" and \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/positions\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"1636029892568,1636029892568\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"miles\"",
+                  "offset": 86
+                },
+                {
+                  "val": "\"4\"",
+                  "offset": 98
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_with_id(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 404 Not Found"
+            ],
+            "result": {
+              "duration": 1277000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "should return status code as \"404\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"404\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_return_status_code_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1083000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should receive an error message as like \"satellite not found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"satellite not found\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_should_receive_an_error_message_as_like(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@exception"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:39.693Z",
+        "before": [
+          {
+            "result": {
+              "duration": 350000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "User calls the API with invalid details to get satellite location \"without timestamp\"",
+        "description": "",
+        "id": "this-feature-is-to-identify-location-of-iss-using-api-services;user-calls-the-api-with-invalid-details-to-get-satellite-location-\"\u003cdescription\u003e\";;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 400000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User is having a satellite NORMAD id as \"25544\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25544\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25544/positions"
+            ],
+            "result": {
+              "duration": 679915000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user will call the \"/satellites/id/positions\" with \"\", \"miles\" and \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/positions\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"miles\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"4\"",
+                  "offset": 71
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_with_id(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 400 Bad Request"
+            ],
+            "result": {
+              "duration": 1059000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "should return status code as \"400\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"400\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_return_status_code_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1505000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should receive an error message as like \"invalid timestamp in list:\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid timestamp in list:\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_should_receive_an_error_message_as_like(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@exception"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:40.386Z",
+        "before": [
+          {
+            "result": {
+              "duration": 326000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "User calls the API with invalid details to get satellite location \"Alphanumeric satellite id and no timestamp\"",
+        "description": "",
+        "id": "this-feature-is-to-identify-location-of-iss-using-api-services;user-calls-the-api-with-invalid-details-to-get-satellite-location-\"\u003cdescription\u003e\";;8",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 312000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User is having a satellite NORMAD id as \"25544\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25544\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25544/positions"
+            ],
+            "result": {
+              "duration": 643929000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user will call the \"/satellites/id/positions\" with \"\", \"miles\" and \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/positions\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"miles\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"4\"",
+                  "offset": 71
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_with_id(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 400 Bad Request"
+            ],
+            "result": {
+              "duration": 924000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "should return status code as \"400\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"400\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_return_status_code_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1914000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should receive an error message as like \"invalid timestamp in list:\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid timestamp in list:\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_should_receive_an_error_message_as_like(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@exception"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "This feature is to identify location of ISS using api services",
+    "description": "",
+    "id": "this-feature-is-to-identify-location-of-iss-using-api-services",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/get-satellite-position.feature",
+    "tags": [
+      {
+        "name": "@allTests",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-17T14:04:41.042Z",
+        "before": [
+          {
+            "result": {
+              "duration": 415000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User calls the API with valid details to get satellite TLE data \"Response in text format for a valid satellite id\"",
+        "description": "",
+        "id": "this-feature-is-to-gather-tle-data-of-iss-satellite-using-api-services;user-calls-the-api-with-valid-details-to-get-satellite-tle-data-\"\u003cdescription\u003e\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 549000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is having a satellite NORMAD id as \"25544\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25544\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25544/tles"
+            ],
+            "result": {
+              "duration": 946034000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user will call the TLE \"/satellites/id/tles\" with \"text\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/tles\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"text\"",
+                  "offset": 54
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_tle_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 200 OK"
+            ],
+            "result": {
+              "duration": 3559000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "should receive the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_receive_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "ISS (ZARYA)\n1 25544U 98067A   21198.04241667  .00002257  00000-0  49402-4 0  9990\n2 25544  51.6424 195.0856 0002001 161.0947 301.5999 15.48812989293228"
+            ],
+            "result": {
+              "duration": 13767000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "should receive a valid data for the satellite \"ISS (ZARYA)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ISS (ZARYA)\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_receive_a_valid_data(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@valid"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:42.049Z",
+        "before": [
+          {
+            "result": {
+              "duration": 641000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "User calls the API with valid details to get satellite TLE data \"Response in Json format for a valid satellite id\"",
+        "description": "",
+        "id": "this-feature-is-to-gather-tle-data-of-iss-satellite-using-api-services;user-calls-the-api-with-valid-details-to-get-satellite-tle-data-\"\u003cdescription\u003e\";;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 996000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is having a satellite NORMAD id as \"25544\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25544\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25544/tles"
+            ],
+            "result": {
+              "duration": 668315000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user will call the TLE \"/satellites/id/tles\" with \"json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/tles\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"json\"",
+                  "offset": 54
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_tle_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 200 OK"
+            ],
+            "result": {
+              "duration": 1538000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "should receive the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_receive_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "{\n    \"requested_timestamp\": 1626530682,\n    \"tle_timestamp\": 1626483665,\n    \"id\": \"25544\",\n    \"name\": \"iss\",\n    \"header\": \"ISS (ZARYA)\",\n    \"line1\": \"1 25544U 98067A   21198.04241667  .00002257  00000-0  49402-4 0  9990\",\n    \"line2\": \"2 25544  51.6424 195.0856 0002001 161.0947 301.5999 15.48812989293228\"\n}"
+            ],
+            "result": {
+              "duration": 679792000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "should receive a valid data for the satellite \"ISS (ZARYA)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ISS (ZARYA)\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_receive_a_valid_data(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@valid"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:43.416Z",
+        "before": [
+          {
+            "result": {
+              "duration": 858000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "User calls the API with valid details to get satellite TLE data \"without format\"",
+        "description": "",
+        "id": "this-feature-is-to-gather-tle-data-of-iss-satellite-using-api-services;user-calls-the-api-with-valid-details-to-get-satellite-tle-data-\"\u003cdescription\u003e\";;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2220000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is having a satellite NORMAD id as \"25544\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25544\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25544/tles"
+            ],
+            "result": {
+              "duration": 662824000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user will call the TLE \"/satellites/id/tles\" with \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/tles\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 54
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_tle_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 200 OK"
+            ],
+            "result": {
+              "duration": 2804000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "should receive the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_receive_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "{\n    \"requested_timestamp\": 1626530684,\n    \"tle_timestamp\": 1626483665,\n    \"id\": \"25544\",\n    \"name\": \"iss\",\n    \"header\": \"ISS (ZARYA)\",\n    \"line1\": \"1 25544U 98067A   21198.04241667  .00002257  00000-0  49402-4 0  9990\",\n    \"line2\": \"2 25544  51.6424 195.0856 0002001 161.0947 301.5999 15.48812989293228\"\n}"
+            ],
+            "result": {
+              "duration": 69010000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "should receive a valid data for the satellite \"ISS (ZARYA)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ISS (ZARYA)\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_receive_a_valid_data(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@valid"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:44.163Z",
+        "before": [
+          {
+            "result": {
+              "duration": 429000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "User calls the API with valid details to get satellite TLE data \"special charater in format field\"",
+        "description": "",
+        "id": "this-feature-is-to-gather-tle-data-of-iss-satellite-using-api-services;user-calls-the-api-with-valid-details-to-get-satellite-tle-data-\"\u003cdescription\u003e\";;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 584000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is having a satellite NORMAD id as \"25544\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25544\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25544/tles"
+            ],
+            "result": {
+              "duration": 636155000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user will call the TLE \"/satellites/id/tles\" with \"*%@!{_\u003d+\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/tles\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"*%@!{_\u003d+\"",
+                  "offset": 54
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_tle_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 200 OK"
+            ],
+            "result": {
+              "duration": 2483000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "should receive the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_receive_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "{\n    \"requested_timestamp\": 1626530684,\n    \"tle_timestamp\": 1626483665,\n    \"id\": \"25544\",\n    \"name\": \"iss\",\n    \"header\": \"ISS (ZARYA)\",\n    \"line1\": \"1 25544U 98067A   21198.04241667  .00002257  00000-0  49402-4 0  9990\",\n    \"line2\": \"2 25544  51.6424 195.0856 0002001 161.0947 301.5999 15.48812989293228\"\n}"
+            ],
+            "result": {
+              "duration": 75558000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "should receive a valid data for the satellite \"ISS (ZARYA)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ISS (ZARYA)\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_receive_a_valid_data(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@valid"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:44.886Z",
+        "before": [
+          {
+            "result": {
+              "duration": 401000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "User calls the API with invalid details to get satellite TLE data \"invalid ulr\"",
+        "description": "",
+        "id": "this-feature-is-to-gather-tle-data-of-iss-satellite-using-api-services;user-calls-the-api-with-invalid-details-to-get-satellite-tle-data-\"\u003cdescription\u003e\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 423000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User is having a satellite NORMAD id as \"25544\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25544\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25544/tle"
+            ],
+            "result": {
+              "duration": 622748000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user will call the TLE \"/satellites/id/tle\" with \"\u003cformat\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/tle\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"\u003cformat\u003e\"",
+                  "offset": 53
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_tle_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 404 Not Found"
+            ],
+            "result": {
+              "duration": 1133000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "should return status code as \"404\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"404\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_return_status_code_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user should receive an error message as like \"Invalid controller specified (satellites_tle)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid controller specified (satellites_tle)\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_should_receive_an_error_message_as_like(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@exception"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:45.526Z",
+        "before": [
+          {
+            "result": {
+              "duration": 463000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "User calls the API with invalid details to get satellite TLE data \"invalid id\"",
+        "description": "",
+        "id": "this-feature-is-to-gather-tle-data-of-iss-satellite-using-api-services;user-calls-the-api-with-invalid-details-to-get-satellite-tle-data-\"\u003cdescription\u003e\";;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 492000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User is having a satellite NORMAD id as \"25547\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"25547\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/25547/tles"
+            ],
+            "result": {
+              "duration": 644071000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user will call the TLE \"/satellites/id/tles\" with \"\u003cformat\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/tles\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"\u003cformat\u003e\"",
+                  "offset": 54
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_tle_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 404 Not Found"
+            ],
+            "result": {
+              "duration": 719000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "should return status code as \"404\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"404\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_return_status_code_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 638000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user should receive an error message as like \"satellite not found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"satellite not found\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_should_receive_an_error_message_as_like(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@exception"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-17T14:04:46.180Z",
+        "before": [
+          {
+            "result": {
+              "duration": 235000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.initialization(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "User calls the API with invalid details to get satellite TLE data \"alphanumeric and invalid\"",
+        "description": "",
+        "id": "this-feature-is-to-gather-tle-data-of-iss-satellite-using-api-services;user-calls-the-api-with-invalid-details-to-get-satellite-tle-data-\"\u003cdescription\u003e\";;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 263000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User is having a satellite NORMAD id as \"255SSAS47\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"255SSAS47\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_is_having_a_satellite_normad_id_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "/satellites/255SSAS47/tles"
+            ],
+            "result": {
+              "duration": 685107000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user will call the TLE \"/satellites/id/tles\" with \"\u003cformat\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/satellites/id/tles\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"\u003cformat\u003e\"",
+                  "offset": 54
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.the_user_will_call_the_tle_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "HTTP/1.1 404 Not Found"
+            ],
+            "result": {
+              "duration": 849000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "should return status code as \"404\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"404\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.should_return_status_code_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1067000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user should receive an error message as like \"satellite not found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"satellite not found\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.tl.toc.stepDefinitions.SatelliteInformationStepDefinitions.user_should_receive_an_error_message_as_like(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@allTests"
+          },
+          {
+            "name": "@exception"
+          }
+        ]
+      }
+    ],
+    "name": "This feature is to gather TLE data of ISS satellite using api services",
+    "description": "",
+    "id": "this-feature-is-to-gather-tle-data-of-iss-satellite-using-api-services",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/get-satellite-tle.feature",
+    "tags": [
+      {
+        "name": "@allTests",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
